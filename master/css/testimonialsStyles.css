@@ -1,0 +1,234 @@
+/* General Page Styling */
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    width: 98%;
+}
+.header-scroll {
+    background-color: #000; /* Black background on scroll */
+}
+.logo {
+    height: 80px;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+/* Background Section */
+.our-team {
+    padding: 100px; /* Added padding around content */
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+.our-team h1 {
+    font-size: 3em;
+    color: #ffffff;
+}
+.our-team p {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: justify;
+    width: 100%;
+}
+.hero-content {
+    max-width: 100%; /* Set a max width for the content */
+}
+
+/* Carousel Section */
+/* Carousel Section */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Constrain the width to center the carousel */
+    margin: 50px auto; /* Center and add spacing from the top */
+    height: 650px; /* Height for the slider */
+    overflow: hidden; /* Ensure items stay within the container */
+}
+
+.item {
+    position: absolute;
+    width: 300px; /* Adjusted width for the carousel item */
+    height: 500px; /* Height of the carousel item */
+    background: linear-gradient(#170aff, #ff2869); /* Gradient background */
+    color: #fff; /* Text color */
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    text-align: center;
+    left: calc(50% - 150px); /* Centered based on item width */
+    top: 50px; /* Adjust positioning */
+    opacity: 0; /* Initial opacity for fade-in effect */
+}
+
+
+.member-photo {
+    width: 50%; /* Image width set to 50% of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match the card's border radius */
+    margin-bottom: 15px; /* Space below the photo */
+    display: block; /* Ensures the image behaves like a block element */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+}
+
+.item img {
+    width: 50%; /* Ensure image takes 50% of the card width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+    display: block; /* Block display for centering */
+    margin: 0 auto; /* Center the image */
+}
+
+.item.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Adjust left and right click areas */
+.left-click-area, .right-click-area {
+    position: absolute;
+    top: 50%; /* Center the buttons vertically */
+    width: 50px; /* Width of the buttons */
+    height: 100%; /* Full height */
+    cursor: pointer;
+    transform: translateY(-50%); /* Center buttons vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for better visibility */
+}
+
+.left-click-area {
+    left: 0; /* Position at the left edge */
+}
+
+.right-click-area {
+    right: 0; /* Position at the right edge */
+}
+
+/* Contact Us Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding: 0 40px 40px; /* Uniform padding on all sides */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Text color white */
+    width: 100%; /* Full width of the container */
+}
+
+.contact-content {
+    display: flex;
+    max-width: 100%; /* Allow full width usage */
+    width: 100%; /* Ensure the content takes full width */
+    gap: 20px; /* Add space between the map and details */
+}
+
+.map-container {
+    flex: 0 0 70%; /* 70% width for the map */
+}
+
+.contact-details {
+    flex: 0 0 30%; /* 30% width for the contact details */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better spacing */
+}
+
+.contact-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Size of the WhatsApp icon */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+/* Responsive Design for Contact Us Section */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack map and details on small screens */
+        text-align: center; /* Center align text on small screens */
+    }
+    .map-container {
+        width: 100%; /* Full width for map */
+        margin-bottom: 20px; /* Space below map */
+    }
+    .contact-details {
+        width: 100%; /* Full width for contact details */
+        margin-left: 0; /* Remove margin on mobile */
+        text-align: left; /* Ensure left alignment on mobile */
+    }
+}
+
+.connect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 0.01px solid #000000;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.connect-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1.0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

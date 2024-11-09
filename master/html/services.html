@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - QubeQA</title>
+    <link rel="stylesheet" href="../css/servicesStyles.css">
+    <script>
+        window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    const scrollPosition = window.scrollY;
+    const fadeThreshold = 200; // Adjust based on when you want the fade to complete
+
+    // Calculate opacity based on scroll position
+    const opacity = Math.min(scrollPosition / fadeThreshold, 1);
+    header.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`; // Gradually transition from transparent to black
+});
+
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <img src="../images/QubeQA.png" alt="QubeQA Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section 1: Our Services Title with Background Image -->
+    <section id="services-intro" style="background-image: url('../images/servicesBG.jpg'); background-size: cover; background-position: center; height: 80vh; display: flex; align-items: center; justify-content: center; color: #ffffff; text-align: center;">
+        <div class="hero-content">
+            <h1>Our Services</h1>
+            <p>At Qube QA, we provide a comprehensive range of testing services to ensure software quality and reliability. Our manual testing uncovers usability issues and validates functionality through hands-on engagement with applications. We conduct thorough functional testing to verify that features operate according to specifications, while our mobile testing ensures flawless performance across various devices and platforms. Additionally, our performance testing assesses applications for speed, scalability, and stability under different loads, preventing potential bottlenecks. With these tailored solutions, Qube QA enhances software quality and promotes user satisfaction, ensuring your applications are ready to excel in a competitive landscape.</p>
+        </div>
+    </section>
+
+    
+    <section id="automation-testing" class="automation-testing">
+        <div class="automation-image">
+            <img src="../images/automation.png" alt="Automation Testing">
+        </div>
+        <div class="automation-text">
+            <h2>Automation Testing</h2>
+            <p>
+                At Qube QA, we excel in providing comprehensive automation testing solutions that elevate software quality and streamline the development process. Our team of experienced testers leverages advanced tools and frameworks to create efficient and reliable test scripts, ensuring thorough coverage and minimizing human error. We customize our automation strategies to meet the specific needs of each client, whether it's functional, regression, or performance testing. By integrating our automation testing services into the CI/CD pipeline, we enable faster feedback loops and reduce overall costs, allowing teams to focus on innovation. Our commitment to best practices and industry standards ensures that every project we undertake is executed with precision and reliability. With Qube QA as your partner, you can confidently release high-quality software, knowing that your testing process is optimized for excellence at every step. Let us help you achieve your business objectives while enhancing product quality and customer satisfaction.
+            </p>
+        </div>
+    </section>
+    
+    
+    <section class="manual-testing">
+        <div class="manual-text">
+            <h2>Manual Testing</h2>
+            <p>At Qube QA, we recognize that manual testing plays a crucial role in delivering high-quality software. Unlike automated testing, manual testing involves skilled testers who engage directly with the application, allowing them to identify usability issues and gather insights that automated processes may miss. This hands-on approach ensures that the software not only functions as intended but also meets user expectations for usability and performance. Our team employs industry best practices and tailored testing strategies to thoroughly assess applications, providing detailed feedback that enhances product quality. By focusing on the user experience, Qube QA’s manual testing services help organizations uncover potential pitfalls before their software reaches end users. This proactive stance not only reduces the risk of costly post-launch fixes but also fosters customer satisfaction and loyalty. Choose Qube QA for your manual testing needs and ensure your software is meticulously vetted for excellence in every aspect.</p>
+        </div>
+        <div class="manual-image">
+            <img src="../images/manual.png" alt="Manual Testing Image">
+        </div>
+    </section>
+
+    
+    <section class="functional-testing">
+        <div class="functional-image">
+            <img src="../images/functional.png" alt="Functional Testing Image">
+        </div>
+        <div class="functional-text">
+            <h2>Functional Testing</h2>
+            <p>At Qube QA, we emphasize the significance of functional testing in ensuring that software applications perform as expected in real-world scenarios. This critical testing phase verifies that each feature and function of the application operates according to the specified requirements. Our dedicated team employs a combination of manual and automated testing techniques to meticulously examine the software, identifying any discrepancies between actual and expected outcomes. By focusing on the functionality of the application, we ensure that all components work harmoniously together, leading to a seamless user experience. Qube QA's functional testing services not only help detect issues early in the development cycle but also enhance overall product quality and reliability. With our thorough approach, clients can confidently launch their applications, knowing that they have been rigorously tested for performance, usability, and compliance with specifications. Trust Qube QA to provide functional testing that safeguards your software's integrity and meets user expectations.</p>
+        </div>
+    </section>
+    
+    
+
+
+    <section class="mobile-testing">
+        <div class="mobile-text">
+            <h2>Mobile Testing</h2>
+            <p>At Qube QA, we understand that mobile testing is essential in today’s app-driven world, where users expect flawless performance across a multitude of devices. Our mobile testing services ensure that applications function seamlessly on various platforms, including iOS and Android, while providing an exceptional user experience. Our experienced team rigorously tests mobile applications to verify their functionality, usability, and compatibility with different screen sizes, operating systems, and network conditions. By conducting thorough testing, we identify and address potential issues, such as performance bottlenecks or user interface inconsistencies, before they reach the end users. This proactive approach not only enhances application reliability but also fosters user satisfaction and loyalty. Qube QA leverages both manual and automated testing strategies to deliver comprehensive mobile testing solutions tailored to meet your specific project needs. Partner with us to ensure that your mobile applications are robust, user-friendly, and ready to succeed in the competitive app marketplace.</p>
+        </div>
+        <div class="mobile-image">
+            <img src="../images/mobile.png" alt="Mobile Testing Image">
+        </div>
+    </section>
+    
+    <section class="performance-testing">
+        <div class="performance-image">
+            <img src="../images/performance.png" alt="Performance Testing Image">
+        </div>
+        <div class="performance-text">
+            <h2>Performance Testing</h2>
+            <p>At Qube QA, we recognize that performance testing is vital to ensuring that software applications can handle user demands and operate smoothly under various conditions. Our performance testing services rigorously assess applications for speed, scalability, and stability, helping identify potential bottlenecks before they impact end users. We simulate real-world usage scenarios to evaluate how applications perform under different loads, including peak traffic periods. Our skilled testers use advanced tools and methodologies to measure response times, throughput, and resource utilization, providing detailed insights that drive optimization efforts. By prioritizing performance testing, Qube QA helps organizations enhance application reliability and improve user satisfaction, ensuring that software can scale effectively as user demand grows. This proactive approach not only reduces the risk of performance-related issues post-launch but also supports business objectives by delivering a robust, high-quality product. Trust Qube QA to deliver comprehensive performance testing solutions that empower your applications to excel in a competitive landscape.</p>
+        </div>
+    </section>
+    
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31512.78517409904!2d78.351390!3d17.460589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badb39239c4b8a9%3A0x4188f1f78e7b737f!2s17.460589%2C%2078.351390!5e0!3m2!1sen!2sin!4v1605200368567!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-details">
+                <h2>Reachout us at</h2><br><br>
+                <p>Plot No. 19, Sri Ram Nagar Colony,<br>Block-C, Kondapur,<br>Hyderabad, Telangana - 500084</p>
+                <p>
+                    <strong>Phone:</strong> +91 8008787715 
+                    <a href="https://wa.me/+918008787715" class="whatsapp-button" target="_blank">
+                        <img src="../images/whatsapp.png" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-left: 5px;" />
+                    </a>
+                </p>
+                <p><strong>Email:</strong> xyz@xyz.com</p><br><br><br><br>
+                <div class="contact-message">
+                    <p>Can't reach us personally? No Problem.</p>
+                </div>
+                <div class="button-container">
+                    <button class="connect-button" onclick="window.location.href='contact.html'">Connect with us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text for readability */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling - Transparent by Default */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.header-scroll {
+    background-color: #000; /* Black background on scroll */
+}
+.logo {
+    height: 80px;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 15px;
+}
+nav ul li a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #1e90ff; /* Light blue hover effect */
+}
+
+
+/* Centered Background GIF */
+/* Centered Background GIF */
+.home-hero {
+    height: 80vh; /* Increase height to make section larger */
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 40px; /* Increased padding to add space on either side */
+    text-align: center; /* Center align text */
+}
+
+/* Hero Content Styles */
+.hero-content {
+    max-width: 100%; /* Set a max width for the content */
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Increase font size for a more prominent welcome message */
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #ffffff; /* Softer white for secondary text */
+    text-align: justify; /* Justify text for better readability */
+    padding: 65px;
+}
+
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.9); /* Dark gray background for the form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #fff; /* White text for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Darker border for inputs */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #333; /* Dark background for inputs */
+    color: #fff; /* White text for inputs */
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background: #d400bb; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #1400cc; /* Hover effect */
+}
+
+/* Social Icons */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust icon size */
+}
+
+/* General Contact Us Section */
+.general-contact {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.general-contact h2 {
+    margin-bottom: 10px;
+    color: #fff; /* White color for section header */
+}
+
+.general-contact p {
+    color: #ccc; /* Light gray for text to contrast against black */
+}
+
+/* Contact Us Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding: 40px; /* Uniform padding on all sides */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Text color white */
+    width: 100%; /* Full width of the container */
+}
+
+.contact-content {
+    display: flex;
+    max-width: 100%; /* Allow full width usage */
+    width: 100%; /* Ensure the content takes full width */
+    gap: 20px; /* Add space between the map and details */
+}
+
+.map-container {
+    flex: 0 0 70%; /* 70% width for the map */
+}
+
+.contact-details {
+    flex: 0 0 30%; /* 30% width for the contact details */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better spacing */
+}
+
+.contact-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Size of the WhatsApp icon */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+
+/* Responsive Design for Contact Us Section */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack map and details on small screens */
+        text-align: center; /* Center align text on small screens */
+    }
+    .map-container {
+        width: 100%; /* Full width for map */
+        margin-bottom: 20px; /* Space below map */
+    }
+    .contact-details {
+        width: 100%; /* Full width for contact details */
+        margin-left: 0; /* Remove margin on mobile */
+        text-align: left; /* Ensure left alignment on mobile */
+    }
+}
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 0px solid #000000;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1.0);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

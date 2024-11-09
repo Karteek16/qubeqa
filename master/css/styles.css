@@ -1,0 +1,373 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text for readability */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling - Transparent by Default */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.header-scroll {
+    background-color: #000; /* Black background on scroll */
+}
+.logo {
+    height: 80px;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 15px;
+}
+nav ul li a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #1e90ff; /* Light blue hover effect */
+}
+
+
+/* Centered Background GIF */
+.home-hero {
+    height: 80vh; /* Increase height to make section larger */
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding-top: 80px; /* Added padding to account for fixed header */
+}
+.hero-content h1 {
+    font-size: 3em; /* Increase font size for a more prominent welcome message */
+    color: #ffffff;
+}
+.hero-content p {
+    font-size: 1.5em;
+    color: #ffffff; /* Softer white for secondary text */
+    text-align: justify;
+    padding: 80px;
+    text-emphasis: bold;
+}
+
+
+
+/* About Us Section */
+body #about {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 40px; /* Uniform padding on all sides */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Text color white */
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    max-width: 100%;
+}
+
+.about-image {
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 75%; /* Adjust width for text content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 300px; /* Set a minimum height for consistent layout */
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    text-align: justify; /* Justify the text */
+}
+
+.button-container {
+    margin-top: auto; /* Push the button to the bottom */
+    text-align: center; /* Center align the button */
+}
+
+#about .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border: 0.01px solid #000000; /* White border */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    box-shadow: none; /* No shadow by default */
+}
+
+#about .button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1.0); /* White shadow effect on hover */
+}
+
+/* Responsive Design for About Us Section */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image {
+        width: 80%; /* Make the image smaller on mobile */
+        margin-bottom: 20px;
+    }
+    .about-text {
+        width: 100%; /* Full width for text */
+        margin-left: 0;
+    }
+}
+
+/* Services Section */
+body #services {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 40px; /* Uniform padding on all sides */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Text color white */
+    width: 100%;
+}
+
+.services-content {
+    display: flex;
+    max-width: 100%;
+}
+
+.services-text {
+    width: 75%; /* Adjust width for text content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 300px; /* Set a minimum height for consistent layout */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.services-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.services-text p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    text-align: justify; /* Justify the text */
+}
+
+.services-image {
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Button Container */
+.button-container {
+    margin-top: auto; /* Push the button to the bottom */
+    text-align: center; /* Center align the button */
+}
+
+#services .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border: 0.01px solid #000000; /* White border */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    box-shadow: none; /* No shadow by default */
+}
+
+#services .button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1.0); /* White shadow effect on hover */
+}
+
+/* Responsive Design for Services Section */
+@media (max-width: 768px) {
+    .services-content {
+        flex-direction: column; /* Stack text and image vertically on small screens */
+        text-align: center; /* Center align text on small screens */
+    }
+    .services-image {
+        width: 80%; /* Make the image smaller on mobile */
+        margin-bottom: 20px;
+    }
+    .services-text {
+        width: 100%; /* Full width for text */
+        margin-right: 0; /* Remove margin on mobile */
+    }
+}
+
+
+section {
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid #333; /* Subtle section divider */
+}
+#about, #services, #contact {
+    background-color: #1e1e1e; /* Slightly lighter background */
+}
+h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/****************************************************************************************************************************************************************/
+/* Contact Us Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding: 40px; /* Uniform padding on all sides */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Text color white */
+    width: 100%; /* Full width of the container */
+}
+
+.contact-content {
+    display: flex;
+    max-width: 100%; /* Allow full width usage */
+    width: 100%; /* Ensure the content takes full width */
+    gap: 20px; /* Add space between the map and details */
+}
+
+.map-container {
+    flex: 0 0 70%; /* 70% width for the map */
+}
+
+.contact-details {
+    flex: 0 0 30%; /* 30% width for the contact details */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better spacing */
+}
+
+.contact-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Size of the WhatsApp icon */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+
+/* Responsive Design for Contact Us Section */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack map and details on small screens */
+        text-align: center; /* Center align text on small screens */
+    }
+    .map-container {
+        width: 100%; /* Full width for map */
+        margin-bottom: 20px; /* Space below map */
+    }
+    .contact-details {
+        width: 100%; /* Full width for contact details */
+        margin-left: 0; /* Remove margin on mobile */
+        text-align: left; /* Ensure left alignment on mobile */
+    }
+}
+.connect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 0.01px solid #000000;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.connect-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1.0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Footer (if needed) */
+footer {
+    background-color: #121212;
+    color: #777;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #333;
+}

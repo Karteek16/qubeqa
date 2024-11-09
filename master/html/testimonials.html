@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="../css/testimonialsStyles.css">
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            const scrollPosition = window.scrollY;
+            const fadeThreshold = 200;
+            const opacity = Math.min(scrollPosition / fadeThreshold, 1);
+            header.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+        });
+    </script>
+</head>
+<body>
+    
+   <!-- Header with Logo and Navigation Links -->
+   <header>
+    <img src="../images/QubeQA.png" alt="Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Background GIF Section -->
+<section class="our-team" style="background-image: url('../images/testimonials.jpg');">
+    <div class="hero-content">
+        <h1>Customer satisfaction is our top priority</h1><br>
+        <p>At Qube QA, customer satisfaction is our top priority. We believe that our success is tied directly to the success of our clients, which is why we are dedicated to exceeding expectations in every project. Our team delivers tailored, reliable testing solutions that align with each client's specific goals, ensuring software that performs optimally and meets user needs. Through transparent communication and proactive issue identification, we help our clients confidently launch high-quality products. At Qube QA, we’re committed to building lasting partnerships by providing exceptional service and quality, ensuring that our clients achieve success with every release.</p>
+    </div>
+</section>
+
+    <!-- Team Member Carousel -->
+    <div class="slider">
+        <div class="item">
+            <img src="../images/tm1.jpg" alt="Team Member 1" class="member-photo"> <!-- Photo -->
+            <h2>Amunik</h2>
+            <h3>⭐⭐⭐⭐</h3>
+            <h4>Best service ever</h4>
+        </div>
+        <div class="item">
+            <img src="../images/tm2.jpg" alt="Team Member 2" class="member-photo"> <!-- Photo -->
+            <h2>IV</h2>
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>Best service ever</h4>
+        </div>
+        <div class="item">
+            <img src="../images/tm3.jpg" alt="Team Member 3" class="member-photo"> <!-- Photo -->
+            <h2>ZenQ</h2>
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>Best service ever</h4>
+        </div>
+        <div class="item">
+            <img src="../images/tm4.jpg" alt="Team Member 4" class="member-photo"> <!-- Photo -->
+            <h2>Bugpredators</h2>
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>Best service ever</h4>
+        </div>
+        <div class="item">
+            <img src="../images/tm5.jpg" alt="Team Member 5" class="member-photo"> <!-- Photo -->
+            <h2>Bug Mangnets</h2>
+            <h3>⭐⭐⭐⭐</h3>
+            <h4>Best service ever</h4>
+        </div>
+        <div class="left-click-area"></div>
+        <div class="right-click-area"></div>
+    </div>
+    
+
+     <!-- Contact Us Section -->
+     <section id="contact">
+        <div class="contact-content">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31512.78517409904!2d78.351390!3d17.460589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badb39239c4b8a9%3A0x4188f1f78e7b737f!2s17.460589%2C%2078.351390!5e0!3m2!1sen!2sin!4v1605200368567!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-details">
+                <h2>Reachout us at</h2><br><br>
+                <p>Plot No. 19, Sri Ram Nagar Colony,<br>Block-C, Kondapur,<br>Hyderabad, Telangana - 500084</p>
+                <p>
+                    <strong>Phone:</strong> +91 8008787715 
+                    <a href="https://wa.me/+918008787715" class="whatsapp-button" target="_blank">
+                        <img src="../images/whatsapp.png" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-left: 5px;" />
+                    </a>
+                </p>
+                <p><strong>Email:</strong> xyz@xyz.com</p><br>
+                <div class="contact-message">
+                    <p>Can't reach us personally? No Problem.</p>
+                </div>
+                <div class="button-container">
+                    <button class="connect-button" onclick="window.location.href='contact.html'">Connect with us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

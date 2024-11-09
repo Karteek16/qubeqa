@@ -1,0 +1,285 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.header-scroll {
+    background-color: #000; /* Black background on scroll */
+}
+.logo {
+    height: 80px;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+/* Section 1: Intro with Background Image */
+.home-hero {
+    height: 80vh; /* Increase height to make section larger */
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding-top: 80px; /* Added padding to account for fixed header */
+}
+.hero-content h1 {
+    font-size: 3em; /* Increase font size for a more prominent welcome message */
+    color: #ffffff;
+}
+.hero-content p {
+    font-size: 1.5em;
+    color: #ffffff; /* Softer white for secondary text */
+    text-align: justify;
+    max-width: 100%;
+    padding: 50px;
+}
+
+/* Services Sections 2 to 6 */
+.service {
+    background-color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.service h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.service p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+/* Contact Us Section */
+#contact {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+}
+.contact-content {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    gap: 20px;
+}
+.map-container {
+    flex: 0 0 70%;
+}
+.contact-details {
+    flex: 0 0 30%;
+    padding: 0 20px;
+}
+.contact-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.contact-details p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+.mobile-text,
+.manual-text {
+    flex: 0 0 75%; /* 75% width for the text content */
+    padding-right: 40px; /* Space between image and text */
+    position: relative; /* Relative positioning for inner elements */
+}
+
+.functional-testing,
+.performance-testing,
+.automation-testing,
+.mobile-testing,
+.manual-testing {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    padding: 40px; /* Padding around the section */
+    background-color: #000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.functional-image,
+.performance-image,
+.automation-image,
+.mobile-image,
+.manual-image {
+    flex: 0 0 25%; /* 25% width for the image container */
+    position: relative; /* Relative positioning for inner elements */
+}
+
+.functional-image img,
+.performance-image img,
+.automation-image img,
+.mobile-image img,
+.manual-image img {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin: 0; /* Remove margin to reduce space */
+}
+
+.functional-text,
+.performance-text,
+.automation-text {
+    flex: 0 0 75%; /* 75% width for the text content */
+    padding-left: 40px; /* Space between image and text */
+    position: relative; /* Relative positioning for inner elements */
+}
+
+.functional-text h2,
+.performance-text h2,
+.automation-text h2,
+.mobile-text h2,
+.manual-text h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 5px; /* Reduce space below the title */
+    font-size: 2em; /* Font size for the title */
+}
+
+.functional-text p,
+.performance-text p,
+.automation-text p,
+.mobile-text p,
+.manual-text p {
+    font-size: 1.1em; /* Font size for the paragraph */
+    color: #b0b0b0; /* Soft white for the paragraph text */
+    text-align: justify; /* Justify the text */
+    padding-top: 5px; /* Reduce padding for a tighter look */
+}
+
+/************************************************************************************************************************************************************/
+
+/* Contact Us Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding: 40px; /* Uniform padding on all sides */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Text color white */
+    width: 100%; /* Full width of the container */
+}
+
+.contact-content {
+    display: flex;
+    max-width: 100%; /* Allow full width usage */
+    width: 100%; /* Ensure the content takes full width */
+    gap: 20px; /* Add space between the map and details */
+}
+
+.map-container {
+    flex: 0 0 70%; /* 70% width for the map */
+}
+
+.contact-details {
+    flex: 0 0 30%; /* 30% width for the contact details */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better spacing */
+}
+
+.contact-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Size of the WhatsApp icon */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+
+/* Responsive Design for Contact Us Section */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack map and details on small screens */
+        text-align: center; /* Center align text on small screens */
+    }
+    .map-container {
+        width: 100%; /* Full width for map */
+        margin-bottom: 20px; /* Space below map */
+    }
+    .contact-details {
+        width: 100%; /* Full width for contact details */
+        margin-left: 0; /* Remove margin on mobile */
+        text-align: left; /* Ensure left alignment on mobile */
+    }
+}
+.connect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 0.01px solid #000000;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.connect-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1.0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

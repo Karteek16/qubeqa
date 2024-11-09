@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Updated CSS link -->
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            const scrollPosition = window.scrollY;
+            const fadeThreshold = 200; // Adjust based on when you want the fade to complete
+    
+            // Calculate opacity based on scroll position
+            const opacity = Math.min(scrollPosition / fadeThreshold, 1);
+            header.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+        });
+    </script>
+      
+</head>
+<body>
+
+    <!-- Header with Logo and Navigation Links -->
+    <header>
+        <img src="images/QubeQA.png" alt="Logo" class="logo"> <!-- Updated image path -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Updated link -->
+                <li><a href="html/services.html">Services</a></li>
+                <li><a href="html/team.html">Team</a></li>
+                <li><a href="html/testimonials.html">Testimonials</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Background GIF Section -->
+    <section class="home-hero" style="background-image: url('images/brain.gif');"> <!-- Updated image path -->
+        <div class="hero-content">
+            <h1>Excellence in every test, Quality in every step</h1>
+            <p>At QubeQA, we firmly believe that Quality is the first priority. With "Excellence in every test, Quality in every step" as our guiding principle, we are passionately committed to delivering solutions that are meticulously crafted and thoroughly vetted to meet the highest standards. This unwavering dedication to quality at each phase of testing ensures not only the quality but also the trust of the clients.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-content">
+            <img src="images/about.gif" alt="About Us Image" class="about-image" width="30%"> <!-- Updated image path -->
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>We are a dedicated team of certified testers with over eight years of quality assurance experience, collaborating with multinational companies to enhance their software products. Our expertise in various testing methodologies enables us to deliver tailored services that meet diverse client needs. Each team member is committed to ensuring the reliability, functionality, and user-friendliness of the products we test. Our culture of excellence drives us to stay updated with industry trends, allowing us to identify potential issues early and provide valuable insights to development teams. We implement rigorous testing processes, including automated, performance, and security testing, maintaining the highest standards. Our focus remains on delivering exceptional quality assurance services that empower our clients to achieve their business objectives and exceed customer expectations.</p>
+                <div class="button-container">
+                    <a href="html/team.html" class="button">Know More</a> <!-- Updated link -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-content">
+            <div class="services-text">
+                <h2>Our Services</h2>
+                <p>At QubeQA, we offer a wide range of testing methodologies tailored to meet our clients' unique needs. Whether it's functional, performance, or security testing, we ensure an impressive 99% quality in every project. Our commitment to excellence allows us to adapt our strategies accordingly, and we strictly adhere to ISO standards to uphold the highest quality. This dedication enhances the reliability and performance of the products we test while building trust with our clients. With QubeQA, you can be confident that we prioritize quality and precision, helping you achieve your business objectives and exceed customer expectations.</p>
+                <p>From consulting to implementation, we are here to guide you through every step of the process.</p>
+                <div class="button-container">
+                    <a href="html/services.html" class="button">Know More</a> <!-- Updated link -->
+                </div>
+            </div>
+            <img src="images/services.gif" alt="Services Image" class="services-image" width="30%"> <!-- Updated image path -->
+        </div>
+    </section>
+    
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31512.78517409904!2d78.351390!3d17.460589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3badb39239c4b8a9%3A0x4188f1f78e7b737f!2s17.460589%2C%2078.351390!5e0!3m2!1sen!2sin!4v1605200368567!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-details">
+                <h2>Reach out to us at</h2><br><br>
+                <p>Plot No. 19, Sri Ram Nagar Colony,<br>Block-C, Kondapur,<br>Hyderabad, Telangana - 500084</p>
+                <p>
+                    <strong>Phone:</strong> +91 8008787715 
+                    <a href="https://wa.me/+918008787715" class="whatsapp-button" target="_blank">
+                        <img src="images/whatsapp.png" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-left: 5px;" />
+                    </a>
+                </p>
+                <p><strong>Email:</strong> xyz@xyz.com</p><br><br><br><br>
+                <div class="contact-message">
+                    <p>Can't reach us personally? No Problem.</p>
+                </div>
+                <div class="button-container">
+                    <button class="connect-button" onclick="window.location.href='html/contact.html'">Connect with us</button> <!-- Updated link -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
